@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main{
+    width: 960px;
+    margin: 50px auto;
+}
+
+.bonjour{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+.bonjour:last-child{
+    margin-right: 0;
+  }
+
+.title{
+    text-align: left;
+    margin: 15px auto 10px 5px;
+}
+
+.image1{
+    
+    height: 150px;
+    background-image: url(img/flow01.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.image2{
+    
+    height: 150px;
+    background-image: url(img/flow02.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.image3{
+    
+    height: 150px;
+    background-image: url(img/flow03.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.step{
+    background-color: orange;
+    color: white;
+    padding: 3px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .bonjour{
+        margin: 0 auto ;
+        width: 90%;
+        float: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bonjour:nth-child(2){
+        margin: 20px auto 20px ;
+        width: 90%;
+        float: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bonjour:last-child{
+        margin: 0px auto ;
+        width: 90%;
+        float: none;
+    }
+}
